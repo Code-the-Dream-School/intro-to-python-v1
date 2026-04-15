@@ -19,14 +19,14 @@ If you have questions at any point, ask a question in the `#[class_name]-discuss
 
 ## Topics
 
-1. **Variables, data types, print/input:**
+1. [**Variables, data types, and print/input:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/01_variables_datatypes_printinput.md) <br>
 TBD text
 
-3. **Simple scripts:**
+2. [**Simple scripts:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/02_scripts.md) <br>
 TBD
 
-4. **Debugging basics:**
+3. [**Debugging basics:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/03_debugging_basics.md) <br>
 TBD
 
-5. **Intro to version control:**
+4. [**Intro to version control:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/04_versioncontrol.md) <br>
 TBD
