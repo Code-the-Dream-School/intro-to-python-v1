@@ -2,7 +2,7 @@
 
 Welcome to **Intro to Python**!
 
-**Lesson Overview**
+**Lesson Overview** <br>
 TBD
 
 ## How to Navigate this Course
