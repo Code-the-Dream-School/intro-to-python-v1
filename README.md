@@ -1,10 +1,5 @@
-# intro-to-python-v1
-Curriculum for Code the Dream's Intro to Python course.
+<img width="300" height="82" alt="CTD_Logo1" src="https://github.com/user-attachments/assets/d8662a3b-7c66-4097-86d9-d29a6b097815" />
 
-## Repo Structure
+# Intro to Python
 
-## Contribution Guidelines
-
-## Planning
-
-See the Wiki for an evolving plan & meeting notes.
+TBD
