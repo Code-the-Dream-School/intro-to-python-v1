@@ -1,6 +1,8 @@
 # Conceptual Intro to Version Control
 
-> To Do: Add conceptual intro to version control.
+> **Source:** New content (adapted from Intro to Programming — JavaScript, Lesson 1)
+>
+> **Notes:** This is a conceptual-only introduction — no Git tooling yet (that's Week 2). Cover: what a software repository is, why version control matters, and what Git/GitHub are at a high level. Students create a GitHub account and repository this week for practice, but do not yet use Git from the command line. Content below is a partial draft from the ITP course; revise for a Python audience.
 
 ## Software Repositories
 
