@@ -88,7 +88,7 @@ A complete Pokémon database with stats (HP, attack, defense, speed, special att
 - **Option B:** build a list from user input and export each Pokémon's stats to CSV
 - **Docs:** https://pokeapi.co/docs/v2
 
-> **Using a different API:** If you'd like to use an API not listed here, check with your mentor first. It must be free, require no API key for basic access, and return a list of records that can be structured as a list of dictionaries.
+> **Using a different API:** If you'd like to use an API not listed here, check with your class's Cohort Instructional Leader (CIL) first. It must be free, require no API key for basic access, and return a list of records that can be structured as a list of dictionaries.
 
 ---
 
