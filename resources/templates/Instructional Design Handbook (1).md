@@ -143,6 +143,20 @@ On the other hand, **summative assessments** *evaluate student learning* at the 
 
 Our goal is to include summative assessments several times in a course, likely at the end of each unit, as long as that unit is not very short. For example, an Intro course with 4 weeks of JavaScript, 2 weeks of Git/GitHub, 3 weeks of HTML & CSS, and 2 weeks of final project work could have three summative assessments: one for JavaScript, one for Git/GitHub and HTML & CSS, and a final project. 
 
+#### Weekly Assignment Structure
+
+Each weekly assignment (Weeks 1–9) consists of two parts that mirror the formative-to-summative progression described above:
+
+**Part 1 — Warmup Exercises**
+
+A series of short, targeted coding tasks tied directly to that week's concepts. These exercises are low-stakes, intentionally approachable, and designed to give students quick wins before tackling the larger task. A student who struggles with the warmups is signaling they may need additional support before moving on; a student who breezes through them should be ready for the mini-project.
+
+**Part 2 — Mini-Project**
+
+A self-contained programming task that asks students to build or extend something meaningful. The mini-project is scaffolded — it has a clear problem statement, a suggested structure, and hints where the risk of total confusion is high — but it does not walk students through every step. Students are expected to make independent decisions and apply the week's concepts to a new context.
+
+> Weeks 10 and 11 replace this two-part structure with the final project.
+
 #### CTD Assessment Practices
 
 In 2026, CTD classes will follow three factors for determining whether students pass a class: assignment score, quiz score, and project score. See the table below for more details. (Note: this is an active discussion, final % of grade and other details TBD). 
@@ -460,17 +474,44 @@ Detailed list of:
 
 * List any steps students need to set up the weekly assignment, including files to download or tools to access.
 
-## Task List
+## Part 1 — Warmup Exercises
 
-### Task 1
+Short, targeted coding tasks that reinforce this week's core concepts. Complete all warmup exercises before starting the mini-project.
 
-* TBD  
-* TBD  
+### Exercise 1
+
 * TBD
 
-### Task 2
+### Exercise 2
 
-* Etc. 
+* TBD
+
+## Part 2 — Mini-Project
+
+A self-contained task that asks you to build or extend something using this week's skills. Read the full prompt before starting. You will need to make some independent decisions — that's intentional.
+
+### Prompt
+
+TBD
+
+### Hints
+
+* TBD
+
+## Video Reflection
+
+Record a short video (3–5 minutes) on YouTube, Loom, or a similar platform and share the link in your submission.
+
+Your video should address the following questions. You don't need to cover every sub-point in depth — aim for clear, conversational explanations over a polished script.
+
+1. TBD
+2. TBD
+3. TBD
+
+**Requirements:**
+- Keep it to 3–5 minutes
+- Use screen sharing to walk through your code when relevant
+- Speak in your own words — no need to read from a script
 
 ## Submitting the Assignment
 
