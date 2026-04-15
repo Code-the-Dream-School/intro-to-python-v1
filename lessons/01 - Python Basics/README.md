@@ -3,7 +3,8 @@
 Welcome to **Intro to Python**!
 
 **Lesson Overview**
-TBD
+
+> Add narrative summary of the lesson.
 
 ## How to Navigate this Course
 
@@ -19,14 +20,18 @@ If you have questions at any point, ask a question in the `#[class_name]-discuss
 
 ## Topics
 
-1. [**Variables, data types, and print/input:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/01_variables_datatypes_printinput.md) <br>
-TBD text
+1. **[Variables, Data Types, Print/Input](01_variables_datatypes_printinput.md)**
+   *Ported from Python Essentials — PE 1.2 (Variables & Data Types), PE 1.3 (Operators)*
+   Variables, data types (int, float, str, bool), type conversion, arithmetic/comparison/logical operators, `print()`, `input()`
 
-2. [**Simple scripts:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/02_scripts.md) <br>
-TBD
+2. **[Simple Scripts](02_scripts.md)**
+   *New content*
+   Writing short scripts in the online IDE; producing tangible, real-world output; saving and downloading `.py` files for submission
 
-3. [**Debugging basics:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/03_debugging_basics.md) <br>
-TBD
+3. **[Debugging Basics](03_debugging_basics.md)**
+   *Ported from Python Essentials — PE 1.7 (Basic Debugging)*
+   Reading Python error messages; using `print` statements to trace values and program flow
 
-4. [**Intro to version control:**](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/lessons/01%20-%20Python%20Basics/04_versioncontrol.md) <br>
-TBD
+4. **[Intro to Version Control](04_versioncontrol.md)**
+   *New content (adapted from Intro to Programming — JavaScript)*
+   What version control is and why it matters; conceptual intro to Git and GitHub; creating a GitHub repository
