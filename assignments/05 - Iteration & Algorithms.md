@@ -1,4 +1,4 @@
-# Assignment 4 — Iteration & Algorithms
+# Assignment 5 — Iteration & Algorithms
 
 TBD — Warmup Exercises and Mini-Project to be added when lesson content is drafted.
 
