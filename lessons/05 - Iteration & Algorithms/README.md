@@ -1,4 +1,4 @@
-# Lesson 4 — Iteration & Algorithms
+# Lesson 5 — Iteration & Algorithms
 
 **Lesson Overview**
 Students learn to write programs that repeat actions using loops, then apply that skill to algorithmic thinking. Sorting and searching algorithms are new to this course — they are not covered in Python Essentials.
