@@ -1,8 +1,6 @@
 # Assignment 11 — Final Project Part II
 
-Choose one extension track and complete its requirements. Both tracks share the same universal requirements.
-
----
+> Students choose one extension track and complete its requirements. Both tracks share the same universal requirements.
 
 ## Universal Requirements
 
