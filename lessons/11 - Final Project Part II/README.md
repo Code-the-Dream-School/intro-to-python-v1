@@ -1,49 +1,20 @@
 # Lesson 11 — Final Project Part II
 
 **Lesson Overview**
-Students extend their Week 10 project by choosing one of two tracks. Both options require the same universal technical standards. This week is also the course's final submission and celebration week.
+Students extend their Week 10 project by choosing one of two tracks. This week introduces genuinely new material — read the lesson for your chosen track before you start building. This is also the course's final submission and celebration week.
 
 > **Source:** New content — no equivalent in Python Essentials
->
-> **Notes for content development:** This page should clearly present both options so students can make an informed choice at the end of Week 10. Include the universal requirements prominently so students know what applies to both tracks regardless of choice. Add guidance on what a strong video demo looks like.
 
----
+## Topics
 
-## Student Choice: Pick One Extension Track
+1. **[Choosing Your Extension Track](01_choosing_your_track.md)**
+   *New content*
+   How to decide between Option A and Option B; what each track produces and what new tools it involves; preparing your Week 10 project for extension
 
-### Option A — Visual Analysis
+2. **[Option A — Data Visualization with matplotlib](02_option_a_visualization.md)**
+   *New content*
+   Installing `matplotlib`; building a basic chart from hardcoded data; adapting the chart to your API data; labeling axes and adding a title; saving your chart as a PNG
 
-> Build a data visualization that answers a specific question about your API data.
-
-**Requirements:**
-- Use `matplotlib` (or similar) to create at least one meaningful chart or graph
-- The visualization must answer a specific question you pose about the data (e.g., "Which category has the highest average value?")
-- Add a brief written explanation of what the visualization shows and why you chose it
-
----
-
-### Option B — Data Pipeline
-
-> Clean, process, and export your API data to a structured CSV file for external use.
-
-**Requirements:**
-- Clean the data: handle missing values, normalize field types, filter out invalid records
-- Export the cleaned data to a well-structured CSV file using `csv.DictWriter`
-- Write a brief explanation of what cleaning decisions you made and why
-
----
-
-## Universal Technical Requirements
-
-> These apply to **both** options.
-
-- **Modular design:** All logic in reusable functions with clear parameters and return values
-- **Standard library usage:** Use at least one standard library module beyond `csv` (e.g., `os`, `datetime`)
-- **Version control:** All work committed and submitted via pull request; commit history should show incremental progress
-- **Video demo and design rationale:** A short screen-recorded video (2–4 min) walking through your project and explaining one technical decision you made
-
----
-
-## Submission
-
-TBD — describe final PR requirements, video upload instructions, and any showcase details.
+3. **[Option B — Data Cleaning and CSV Export](03_option_b_pipeline.md)**
+   *New content*
+   Why API data often needs cleaning before export; a per-field decision framework; Python patterns for missing values, type mismatches, and invalid records; exporting with `csv.DictWriter`
