@@ -17,12 +17,6 @@ Students connect Python to the outside world by reading and writing files, then 
    *Ported from Python Essentials — PE 2.3 (Introduction to Modules), PE 2.5 (Working with the OS)*
    Importing modules with `import` and `from ... import`; `csv` (already used above); `os` for file/directory operations; `datetime` for working with dates; using the Python docs to explore a module
 
-4. **[pip and Virtual Environments (Conceptual)](04_pip_virtual_environments.md)**
-   *Ported from Python Essentials — PE 2.6 (Virtual Environments)*
-   What `pip` is and how to install a package; what a virtual environment is and why it matters; creating and activating a `.venv`; `requirements.txt`
-
-   > **Note:** Virtual environments were introduced in Week 2 setup; this section deepens the conceptual understanding and covers `requirements.txt` for the first time.
-
-5. **[When to Write Your Own Code vs. Import a Module](05_when_to_import.md)**
+4. **[When to Write Your Own Code vs. Import a Module](05_when_to_import.md)**
    *New content*
    Standard library vs. third-party packages vs. writing from scratch; how to find and evaluate a package; recognizing when a problem is already solved
