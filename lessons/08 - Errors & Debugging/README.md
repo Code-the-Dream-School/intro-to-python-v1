@@ -18,3 +18,9 @@ Students learn to write code that handles the unexpected gracefully. This week b
    Wrapping risky operations (file reads, network calls) in `try/except`; providing meaningful fallback behavior or user-facing error messages; the difference between crashing and graceful degradation; applying these patterns to scripts from earlier weeks
 
    > **Note:** The `logging` module from PE 1.7 is intentionally moved here from Week 1. Students are now writing larger programs where structured logging is more relevant.
+
+4. **[pip and Virtual Environments (Conceptual)](04_pip_virtual_environments.md)**
+   *Ported from Python Essentials — PE 2.6 (Virtual Environments)*
+   What `pip` is and how to install a package; what a virtual environment is and why it matters; creating and activating a `.venv`; `requirements.txt`
+
+   > **Note:** Virtual environments were introduced in Week 2 setup; this section deepens the conceptual understanding and covers `requirements.txt` for the first time.
