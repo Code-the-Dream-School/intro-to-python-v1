@@ -1,4 +1,4 @@
-# Lesson 5 — Core Data Structures
+# Lesson 4 — Core Data Structures
 
 **Lesson Overview**
 Students learn Python's four core built-in data structures and when to reach for each one. List comprehensions are introduced here as a natural extension of the loops and lists students already know.
