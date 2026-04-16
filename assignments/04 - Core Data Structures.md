@@ -1,4 +1,4 @@
-# Assignment 4 — Iteration & Algorithms
+# Assignment 4 — Core Data Structures
 
 TBD — Warmup Exercises and Mini-Project to be added when lesson content is drafted.
 
@@ -8,9 +8,10 @@ Record a short video (3–5 minutes) on YouTube, Loom, or a similar platform and
 
 Your video should address the following questions. You don't need to cover every sub-point in depth — aim for clear, conversational explanations over a polished script.
 
-1. Explain the difference between a `for` loop and a `while` loop. When would you choose one over the other?
-2. Walk through one of the sorting or searching algorithms you implemented. Explain how it works step by step — without just reading the code aloud.
-3. Describe a bug you hit in a loop this week. How did you find it and fix it?
+1. Questions TBD
+2. Questions TBD
+3. Questions TBD
+
 
 **Requirements:**
 - Keep it to 3–5 minutes
