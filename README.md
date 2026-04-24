@@ -2,6 +2,6 @@
 
 # Intro to Python
 
-This repository contains the curriculum for v1 of Code the Dream's Intro to Python course, an optional prerequisite to Python Essentials.
+This repository contains the curriculum for v1 of Code the Dream's Intro to Python course, an optional prerequisite to Python for Data Engineering & Analysis.
 
 Check out our [contributing guidelines](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/CONTRIBUTING.md) and [code of conduct](https://github.com/Code-the-Dream-School/intro-to-python-v1/blob/main/CONTRIBUTING.md) if you want to help out!
