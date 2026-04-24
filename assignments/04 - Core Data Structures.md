@@ -19,3 +19,32 @@ Your video should address the following questions. You don't need to cover every
 - Speak in your own words — no need to read from a script
 
 Include the video link in your pull request description or `URL2` field in the submission form.
+
+## Review: The GitHub Cycle
+
+**At the start of each week — get a clean starting point:**
+
+```bash
+git checkout main
+git pull origin main
+git checkout -b week-[#]     
+```
+
+**As you work — save your progress:**
+
+```bash
+git status                    # see what's changed (run this often)
+git add .                     # stage all changes
+git commit -m "describe what you did and why"
+git push origin week-[#]        # send your branch to GitHub
+```
+
+You can repeat the `add → commit → push` steps as many times as you like within a week. Committing often gives you more points to return to if something goes wrong — you don't have to wait until you're finished.
+
+**After your PR is merged on GitHub — close the loop:**
+
+```bash
+git checkout main
+git pull origin main          # bring the merged changes back to your local machine
+```
+
