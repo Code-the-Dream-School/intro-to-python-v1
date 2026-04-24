@@ -6,6 +6,8 @@ This is the final week of the course! You're extending the CLI tool you built in
 
 ## Topics
 
+Remember that you only need to choose either Option A or Option B.
+
 1. **[Choosing Your Extension Track](01_choosing_your_track.md)** <br>
    How to decide between Option A and Option B; what each track produces and what new tools it involves; preparing your Week 10 project for extension
 
