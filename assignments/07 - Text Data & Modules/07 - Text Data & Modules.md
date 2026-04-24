@@ -10,17 +10,17 @@
 
 The PR URL should look like `github.com/your-username/python-intro-homework/pull/[number]`, *not the link to your repo homepage*.
 
+---
+
 ## Part 1: Warmup Exercises
 
-Complete each of the following short exercises as a separate Python file in your `assignment-7` folder.
+Complete each of the following short exercises as a separate Python file. Data files for this week are in the `week-7/data/` folder — reference them from your `assignment-7/` working directory using the path `../data/filename`.
 
 ---
 
 ### Warmup 1: Read a Text File Line by Line
 
-A file called `notes.txt` is included in your starter files.
-
-Open `notes.txt` using a `with` block, read it line by line, and print each line with its number:
+Open `../data/notes.txt` using a `with` block, read it line by line, and print each line with its number:
 
 ```
 Line 1: Python is great for working with files.
@@ -37,9 +37,7 @@ Use `.strip()` to remove the trailing newline from each line before printing.
 
 ### Warmup 2: Read a CSV with DictReader
 
-A file called `students.csv` is included in your starter files. It has three columns: `name`, `subject`, and `score`.
-
-Use `csv.DictReader` to read the file and print each student's name and score on a single line:
+Use `csv.DictReader` to read `../data/students.csv` — it has three columns: `name`, `subject`, and `score`. Print each student's name and score on a single line:
 
 ```
 Jazmine: 88
@@ -58,10 +56,10 @@ Priya: 95
 Write a single script that does all three of the following:
 
 1. Print your current working directory using `os.getcwd()`.
-2. Check whether `expenses.csv` exists using `os.path.exists()`. Print `"expenses.csv found."` or `"expenses.csv not found."` accordingly.
-3. Build the path `data/output/report.txt` using `os.path.join()` and print the result.
+2. Check whether `../data/expenses.csv` exists using `os.path.exists()`. Print `"expenses.csv found."` or `"expenses.csv not found."` accordingly.
+3. Use `os.path.join()` to build the path `"../data/expenses.csv"` from its parts (`".."`, `"data"`, `"expenses.csv"`) and print the result. You'll use this same pattern in the mini-project.
 
-**Save as:** `warmup3.py`
+**Submit as:** `warmup3.py`
 
 ---
 
@@ -81,7 +79,7 @@ Use `datetime.now()` and `.strftime()`.
 
 ## Part 2: Mini-Project — Expense Report Generator
 
-A file called `expenses.csv` is included in your starter files. It tracks personal spending across several categories:
+The file `../data/expenses.csv` tracks personal spending across several categories:
 
 ```
 date,category,description,amount
@@ -92,8 +90,8 @@ date,category,description,amount
 
 Write a program that analyzes this data and writes a formatted report to a new file. Follow these steps:
 
-1. Use `os.path.exists()` to verify that `expenses.csv` exists before opening it. If it doesn't, print an error message and stop.
-2. Read `expenses.csv` into a list of dictionaries using `csv.DictReader`.
+1. Use `os.path.exists()` to verify that `../data/expenses.csv` exists before opening it. If it doesn't, print an error message and stop.
+2. Read `../data/expenses.csv` into a list of dictionaries using `csv.DictReader`.
 3. Convert the `amount` field to `float` for each row.
 4. Filter the list to only rows where `category` is `"Food"`.
 5. Calculate the total amount spent on Food.
