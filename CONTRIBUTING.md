@@ -2,8 +2,6 @@
 
 Thanks for your interest in this curriculum! This document explains how the project is organized and how you can help.
 
----
-
 ## How This Project Works
 
 This curriculum is led by CTD staff maintainers with input from a brain trust of volunteers who have shaped the learning outcomes and will review content as it develops. Content development happens on a week-by-week basis. Each week has three deliverables:
@@ -12,15 +10,11 @@ This curriculum is led by CTD staff maintainers with input from a brain trust of
 - **Assignment** — the practice task students complete
 - **Mentor teaching notes** — guidance for mentors leading that week's session
 
----
-
 ## Project Tracking
 
 Each week has a corresponding GitHub issue that stays open until all three deliverables are drafted, reviewed, and finalized. You can find these in the [Issues](https://github.com/Code-the-Dream-School/intro-to-python-v1/issues) tab.
 
 If you find a problem within a specific week — a confusing explanation, a broken example, a gap in coverage — please open a sub-issue referencing the parent week issue.
-
----
 
 ## How to Contribute
 
@@ -51,8 +45,6 @@ Please don't open PRs that restructure whole lessons or add new topics without f
 ### Writing new content
 
 If you want to write a full lesson, assignment, or teaching notes section, reach out first. The maintainer will coordinate to avoid duplicated effort. That said, PRs with draft content are always welcome — worst case it becomes useful source material even if it's not merged directly.
-
----
 
 ## Questions?
 
