@@ -8,6 +8,8 @@
    - **URL1:** A link to your video reflection
    - **URL2:** A link to your pull request from `assignment-7` into `main`
 
+The PR URL should look like `github.com/your-username/python-intro-homework/pull/[number]`, *not the link to your repo homepage*.
+
 ## Part 1: Warmup Exercises
 
 Complete each of the following short exercises as a separate Python file in your `assignment-7` folder.
