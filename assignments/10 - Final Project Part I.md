@@ -2,7 +2,7 @@
 
 ## Project Requirements
 
-> Insert final project narative, including pointing to next week's extension work.
+Make sure you've read through the [Final Project Overview](../final-project-overview.md) to understand the full two-week arc, the API options, and the rubric your project will be evaluated against.
 
 ### Phase 1: Core Program
 
@@ -24,7 +24,36 @@ Complete after Phase 1.
 
 ### Submission
 
-TBD — describe PR requirements, required files (main.py, requirements.txt, README.md), and any demo requirements.
+**Required files**
+
+Your repository must include:
+
+- `main.py` — the entry point for your CLI tool
+- `requirements.txt` — list all third-party packages used (at minimum: `requests`)
+- `README.md` — must include: project title, which API you used, how to install and run the program, and a description of the CLI interaction(s) you implemented
+
+**Pull request**
+
+Submit your work by opening a pull request from a feature branch (use `week-10-final-project` as the branch name). Your PR description should briefly explain what you built and which API you chose.
+
+Your commit history should show incremental progress: at minimum, separate commits for getting the API working, parsing the data, and adding the CLI. Don't submit everything in a single commit.
+
+**Video Reflection**
+
+Record a short video (3–5 minutes) and include the link in your pull request description.
+
+Your video should address:
+
+1. Walk through your `fetch_data()` function. What does it do if the API call fails?
+2. Demonstrate your CLI interaction live — show it running with at least one real input. What happens if a user enters something unexpected?
+3. Walk through one decision you made about how to organize your code into functions and explain why you made it that way.
+
+Requirements:
+- 3–5 minutes
+- Use screen sharing to show your running program and code
+- Speak in your own words. No need to script it!
+
+Upload to YouTube (unlisted) or Loom and paste the link in your PR description.
 
 ---
 
