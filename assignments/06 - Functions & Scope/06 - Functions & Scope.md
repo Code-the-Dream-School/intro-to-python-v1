@@ -1,4 +1,4 @@
-# Assignment 9 — External Libraries & APIs
+# Assignment 6 — Functions & Scope
 
 TBD — Warmup Exercises and Mini-Project to be added when lesson content is drafted.
 
@@ -8,9 +8,9 @@ Record a short video (3–5 minutes) on YouTube, Loom, or a similar platform and
 
 Your video should address the following questions. You don't need to cover every sub-point in depth — aim for clear, conversational explanations over a polished script.
 
-1. Explain in plain terms what an API is and what `requests.get()` does when you call it.
-2. Walk through your function that fetches and parses API data. What does each line do?
-3. What does `response.raise_for_status()` do, and why is it good practice to call it?
+1. TBD relevant to lesson.
+2. TBD relevant to lesson.
+3. TBD relevant to lesson.
 
 **Requirements:**
 - Keep it to 3–5 minutes
@@ -19,12 +19,7 @@ Your video should address the following questions. You don't need to cover every
 
 Include the video link in your pull request description or `URL2` field in the submission form.
 
-## Need a GitHub Review?
-
-Open the dropdown box below:
-
-<details>
-<summary>Weekly Git workflow reference (click to expand)</summary>
+## Review: The GitHub Cycle
 
 **At the start of each week — get a clean starting point:**
 
@@ -51,4 +46,3 @@ You can repeat the `add → commit → push` steps as many times as you like wit
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
-</details>

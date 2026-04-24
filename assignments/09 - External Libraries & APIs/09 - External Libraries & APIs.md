@@ -1,4 +1,4 @@
-# Assignment 6 — Functions & Scope
+# Assignment 9 — External Libraries & APIs
 
 TBD — Warmup Exercises and Mini-Project to be added when lesson content is drafted.
 
@@ -8,9 +8,9 @@ Record a short video (3–5 minutes) on YouTube, Loom, or a similar platform and
 
 Your video should address the following questions. You don't need to cover every sub-point in depth — aim for clear, conversational explanations over a polished script.
 
-1. What is a return value and why does it matter? Show an example from your code.
-2. Explain variable scope using a concrete example. What happens if you try to use a local variable outside the function where it was defined?
-3. Walk through a piece of code you refactored into functions this week. What changed, and why is the refactored version easier to work with?
+1. TBD relevant to lesson.
+2. TBD relevant to lesson.
+3. TBD relevant to lesson.
 
 **Requirements:**
 - Keep it to 3–5 minutes
@@ -19,7 +19,12 @@ Your video should address the following questions. You don't need to cover every
 
 Include the video link in your pull request description or `URL2` field in the submission form.
 
-## Review: The GitHub Cycle
+## Need a GitHub Review?
+
+Open the dropdown box below:
+
+<details>
+<summary>Weekly Git workflow reference (click to expand)</summary>
 
 **At the start of each week — get a clean starting point:**
 
@@ -46,3 +51,4 @@ You can repeat the `add → commit → push` steps as many times as you like wit
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
+</details>

@@ -8,9 +8,9 @@ Record a short video (3–5 minutes) on YouTube, Loom, or a similar platform and
 
 Your video should address the following questions. You don't need to cover every sub-point in depth — aim for clear, conversational explanations over a polished script.
 
-1. Explain the difference between a syntax error, a runtime error, and a logic error. Give an example of each.
-2. Walk through a `try/except` block in your code. What errors does it catch, and what happens when one is raised?
-3. What does "defensive programming" mean? Show a specific example from your assignment where you applied it.
+1. TBD relevant to lesson.
+2. TBD relevant to lesson.
+3. TBD relevant to lesson.
 
 **Requirements:**
 - Keep it to 3–5 minutes
