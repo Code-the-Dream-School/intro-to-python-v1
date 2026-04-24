@@ -1,15 +1,6 @@
-# Option A — Data Visualization with matplotlib
+# Option A — Data Visualization with `matplotlib`
 
-> **Source:** New content
->
-> **Notes for content development:** Students choosing this track have never used matplotlib. The lesson needs to do two things: teach the library mechanics, then connect those mechanics to their project data. Keep these two phases clearly separate — students should run the standalone example and get a chart before they touch their project code. Avoid covering subplots, multiple chart types, or styling beyond labels and rotation. The goal is one good, labeled bar chart — not a matplotlib tutorial. Cover:
-> - Installing matplotlib and what it does at a high level
-> - A minimal standalone example (~12 lines, fake data) students can run immediately
-> - The six matplotlib calls they'll actually use, with a quick-reference table
-> - How to go from a list of dicts to separate label/value lists (list comprehensions from Week 5)
-> - What makes a chart readable: axis labels, title, tick label rotation for long names
-> - Saving to PNG with `plt.savefig()` and the order-of-operations gotcha with `plt.show()`
-> - The written explanation requirement and what it should address
+Option A has you build a data visualization that answers a specific question about your data. We'll use `matplotlib`, a library that makes static, animated, and interactive data visualizations in Python.
 
 ---
 
@@ -19,7 +10,7 @@
 
 You don't need to know much about it to complete this track — the same five or six function calls cover everything you need.
 
-Install it:
+Start by installing it:
 
 ```bash
 pip install matplotlib
@@ -30,7 +21,7 @@ pip freeze > requirements.txt   # update your requirements file
 
 ## A Minimal Working Example
 
-Run this before you touch your project. It uses fake data — the goal is to see a chart and understand the pattern, separately from your API data.
+Run this before you touch your project. It uses fake data; the goal is to see a chart and understand the pattern, separately from your API data.
 
 ```python
 import matplotlib.pyplot as plt
@@ -50,7 +41,7 @@ plt.show()
 
 Run it. A window should open showing a bar chart, and a file called `sample_chart.png` should appear in your project folder.
 
-If that works, you've learned the core pattern. Everything from here is adapting it.
+If that works, you've learned the core pattern! Time to adapt it to your project.
 
 ---
 
@@ -73,7 +64,7 @@ If that works, you've learned the core pattern. Everything from here is adapting
 
 Once the standalone example works, the next step is to pull labels and values from your actual API data instead of the hardcoded lists.
 
-Your data is already a list of dicts — for example:
+Your data is already a list of dicts. For example:
 
 ```python
 records = [
@@ -98,7 +89,7 @@ Then pass them to `plt.bar()` exactly as before. The rest of the chart code does
 
 ## Making It Readable
 
-A chart without labels is just a picture. Before submitting, check:
+A chart without labels is just a picture and can be confusing to your audience. Before submitting, check:
 
 - Does the x-axis label describe what the categories represent?
 - Does the y-axis label include units if relevant (e.g., "Population (millions)")?
@@ -117,5 +108,5 @@ Your submission requires a brief written explanation of what your visualization 
 It should be 3–5 sentences that answer:
 
 1. What question does this chart answer?
-2. What does the data show — what's the main takeaway a reader should leave with?
+2. What does the data show? What's the main takeaway a reader should leave with?
 3. Why did you choose this chart type for this data?
