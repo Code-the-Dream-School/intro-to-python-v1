@@ -8,7 +8,7 @@ Write all of your code in a single file. When you're done, use the **Share** but
 
 > **Important:** online-python.com does not save your work automatically. Before closing your browser tab, either copy your code somewhere safe or generate your share link.
 
-**Here's a quick video explaining how to use online-python.com:** [video link].
+[**Here's a quick video explaining how to use online-python.com**](https://youtu.be/6GOKinRu0m0)
 
 Submit two links in CTD Learns:
 - **URL1:** A link to your video reflection
