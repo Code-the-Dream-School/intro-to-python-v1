@@ -1,14 +1,6 @@
 # Option B — Data Cleaning and CSV Export
 
-> **Source:** New content
->
-> **Notes for content development:** Students choosing this track have already used `csv.DictWriter` in Week 7, so the export mechanics aren't new. What's new is the judgment involved in cleaning decisions. The lesson should teach a decision framework, not a list of techniques. The written explanation is as important as the code — students should understand that documenting cleaning decisions is standard practice in data work. Avoid covering pandas or any library beyond `csv`. Cover:
-> - Why API data often needs cleaning before export (missing fields, inconsistent types, null values)
-> - The per-field decision framework: three questions to ask about every field
-> - Python patterns for each scenario: `.get()` with defaults, type coercion with fallback, filtering invalid records
-> - How to structure a `clean_data()` function
-> - A brief review of `csv.DictWriter` export (students saw this in Week 7)
-> - The written explanation requirement and what it should address
+Option B has you clean, process, and export your data to a structured CSV file for external use.
 
 ---
 
@@ -21,7 +13,7 @@ Public APIs return data in whatever format the API designer chose. In practice, 
 - Some values are `None`, an empty string, or a placeholder like `"N/A"`
 - Lists or nested dicts appear where you expected a simple value
 
-Before exporting to CSV, you decide what to do with each of these situations. Those decisions — and the reasoning behind them — are what this track is about.
+Before exporting to CSV, you decide what to do with each of these situations. Those decisions, and the reasoning behind them, are what this track is about.
 
 ---
 

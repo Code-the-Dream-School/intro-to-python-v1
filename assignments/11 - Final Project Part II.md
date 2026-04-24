@@ -1,7 +1,5 @@
 # Assignment 11 — Final Project Part II
 
-> Students choose one extension track and complete its requirements. Both tracks share the same universal requirements.
-
 ## Universal Requirements
 
 Apply to both options.
@@ -30,8 +28,43 @@ Apply to both options.
 
 ## Submission
 
-TBD — describe final PR requirements, video upload instructions, and any showcase details.
+**Required files**
 
+Your final repository must include:
+
+- `main.py` — the entry point for your CLI tool
+- Any additional `.py` files you created
+- `requirements.txt` — all third-party packages used
+- `README.md` — complete with project description, API used, how to run, CLI interactions, extension track, and written explanation (Visualization or Data Cleaning Decisions section, depending on your track)
+- **Option A only:** the chart saved as a `.png` file
+- **Option B only:** a sample exported `.csv` file
+
+**Pull request**
+
+Update your pull request from Week 10 (or open a new one from your same feature branch, depending on your class workflow). Your PR description should:
+
+- Confirm which option you chose (A or B)
+- Briefly describe what the extension adds to the project
+- Include your video demo link
+
+Your combined commit history across both weeks should show incremental progress. Do not squash your Week 10 commits.
+
+**Video Demo**
+
+Record a 2–4 minute video showing your completed project. Include the link in your PR description and in your `README.md`.
+
+Your video should address:
+
+1. Run the complete project from `main.py` entry to output — show it working live.
+2. Show the extension deliverable (your chart or your CSV file) and explain one decision you made while building it.
+3. If you had more time, what would you add or improve?
+
+Requirements:
+- 2–4 minutes
+- Show your running program on screen — don't just describe it
+- Speak in your own words
+
+Upload to YouTube (unlisted) or Loom.
 ---
 
 ## Rubric
@@ -45,3 +78,7 @@ TBD — describe final PR requirements, video upload instructions, and any showc
 | **Standard Library** | No standard library module used beyond `csv`. | At least one standard library module used appropriately. | Standard library usage is well-chosen and adds real value (e.g., `datetime` for timestamps, `os.path` for file handling). |
 | **Version Control** | All extension work in a single commit. | Multiple commits show incremental progress. Work submitted via pull request. | Commit messages are descriptive and reflect meaningful stages of development across both weeks. |
 | **Video Demo** | No video submitted, or video does not show the running program. | 2–4 minute video walks through the running project and explains one technical decision. | Technical explanation goes beyond what the code says to *why* the decision was made. |
+
+## 🎉 Congrats on submitting your Python Intro final project!
+
+The foundational work you've put in during this class is going to make you a strong developer!
