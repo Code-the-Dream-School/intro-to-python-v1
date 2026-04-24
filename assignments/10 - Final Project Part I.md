@@ -69,3 +69,37 @@ Upload to YouTube (unlisted) or Loom and paste the link in your PR description.
 | **Error Handling** | No error handling — connection errors cause unhandled tracebacks. | `try/except` catches connection errors and bad status codes. User sees a clear error message instead of a traceback. | Errors are caught at the right level of the code. Program continues or exits gracefully with a helpful message. |
 | **Code Organization** | All logic in one long script with no functions, or functions without parameters and return values. | Logic is split into functions with clear names, parameters, and return values. Each function has one responsibility. | Fetching, parsing, and display are cleanly separated. Code is readable without requiring comments to understand. |
 | **Version Control** | Work submitted in a single commit or without a pull request. | Multiple commits show incremental progress. Work submitted via pull request. | Commit messages are descriptive and reflect meaningful stages of development. |
+
+## Need a GitHub Review?
+
+Open the dropdown box below:
+
+<details>
+<summary>Weekly Git workflow reference (click to expand)</summary>
+
+**At the start of each week — get a clean starting point:**
+
+```bash
+git checkout main
+git pull origin main
+git checkout -b week-[#]     
+```
+
+**As you work — save your progress:**
+
+```bash
+git status                    # see what's changed (run this often)
+git add .                     # stage all changes
+git commit -m "describe what you did and why"
+git push origin week-[#]        # send your branch to GitHub
+```
+
+You can repeat the `add → commit → push` steps as many times as you like within a week. Committing often gives you more points to return to if something goes wrong — you don't have to wait until you're finished.
+
+**After your PR is merged on GitHub — close the loop:**
+
+```bash
+git checkout main
+git pull origin main          # bring the merged changes back to your local machine
+```
+</details>
