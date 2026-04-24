@@ -2,7 +2,7 @@
 
 ## Before You Write Code
 
-The most common sticking point in a project like this isn't writing Python — it's figuring out *what* to write. Students who skip straight to code often end up rewriting functions multiple times because they didn't know what shape their data was in.
+The most common sticking point in a project like this isn't writing Python, it's figuring out *what* to write. Students who skip straight to code often end up rewriting functions multiple times because they didn't know what shape their data was in.
 
 Phase 0 takes about 15 minutes. It's not graded. But it will make Phases 1 and 2 significantly smoother.
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     main()
 ```
 
-You're not required to keep exactly this structure — rename functions, add parameters, split into multiple files if you want to. These stubs are a starting point, not a contract.
+You're not required to keep exactly this structure: rename functions, add parameters, split into multiple files if you want to.
 
 **Verify your environment:**
 
