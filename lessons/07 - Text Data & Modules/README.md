@@ -17,6 +17,6 @@ Students connect Python to the outside world by reading and writing files, then 
    *Ported from Python Essentials — PE 2.3 (Introduction to Modules), PE 2.5 (Working with the OS)*
    Importing modules with `import` and `from ... import`; `csv` (already used above); `os` for file/directory operations; `datetime` for working with dates; using the Python docs to explore a module
 
-4. **[When to Write Your Own Code vs. Import a Module](05_when_to_import.md)**
+4. **[When to Write Your Own Code vs. Import a Module](04_when_to_import.md)**
    *New content*
    Standard library vs. third-party packages vs. writing from scratch; how to find and evaluate a package; recognizing when a problem is already solved
