@@ -10,7 +10,7 @@
 
 The PR URL should look like `github.com/your-username/python-intro-homework/pull/[number]`, *not the link to your repo homepage*.
 
-> **This is your first GitHub PR submission.** If anything about the workflow is unclear, reach out to your mentor before the due date — don't wait until the last minute.
+> **This is your first GitHub PR submission.** If anything about the workflow is unclear, reach out to your mentor before the due date. It's normal to have questions about GitHub, don't wait until the last minute to ask for help!
 
 ---
 
