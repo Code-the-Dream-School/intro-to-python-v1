@@ -1,6 +1,10 @@
 # Option A — Data Visualization with `matplotlib`
 
-Option A has you build a data visualization that answers a specific question about your data. We'll use `matplotlib`, a library that makes static, animated, and interactive data visualizations in Python.
+Option A has you build a data visualization that answers a specific question about your data. We'll use `matplotlib`, a library that makes static, animated, and interactive data visualizations in Python. 
+
+If you prefer video learning, start by watching this excellent overview:
+
+> ["How to Use matplotlib in 4 minutes"](https://youtu.be/D4VlmL3G4_o?si=XuQNbap7QOT3BM-M), by Kite
 
 ---
 
