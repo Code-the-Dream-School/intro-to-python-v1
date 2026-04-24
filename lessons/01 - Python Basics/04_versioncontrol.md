@@ -1,33 +1,58 @@
-# Conceptual Intro to Version Control
+# Introduction to Version Control and GitHub
 
-## Software Repositories
+## What is Version Control?
 
-A **software repository**, often called a **"repo"**, is a centralized storage location for code and related files used in software development. Software repositories allows developers to track changes to code, revert to previous versions of code and merge different branches of development.
+When you write Python scripts, each time you save a file you overwrite the previous version. If you make a mistake and want to return to how your code looked yesterday, there's no easy way to do that — the old version is gone.
 
-Software repositories are especially important on projects being developed by a software team where multiple people are working on the same code base. This is true for the majority of software projects.
+Version control solves this problem. A version control system tracks every change you make to your files over time, giving you a full history you can browse, compare, and return to at any point. Think of it like an unlimited undo button — one that works across days, weeks, and entire projects.
 
-There are many cloud-based software repositories. In this class we will use **GitHub**, a hosting platform for **git**, a distributed version control system. Git is used by ~93-95% of developers, making it one of the most widely-applicable tools you'll learn. We'll practice more with git in Week 2.
+Version control also becomes essential when more than one person is working on the same codebase. Without it, two developers editing the same file at the same time would simply overwrite each other's work. With version control, changes can be tracked and merged together in a controlled way. It is a foundational tool in almost every professional software team.
 
-## **Watch this video on how to create a new GitHub Repository:**
+## Git and GitHub
 
-[Creating a New GitHub Repository Video](https://www.youtube.com/watch?v=0AVVOi3hUmE)
+**Git** is the version control system itself — software that runs on your computer and tracks changes to your files.
 
-### Practice - Create a New GitHub Repository
+**GitHub** is a cloud-based platform that hosts Git repositories online. It lets you store your code remotely, share it with collaborators, and manage contributions from multiple developers.
+
+You already have a GitHub account (you've been using it to log into CTD Learns app). This week, you'll start using it as a developer tool for the first time.
+
+## What is a Repository?
+
+A repository (often called a "repo") is a project folder that Git is tracking. It contains your code files along with a complete history of every change ever made to them.
+
+Your repository will live in two places:
+
+- **Remote** — on GitHub, in the cloud, accessible from anywhere
+- **Local** — on your own computer, where you write and run your code
+
+This week, you'll create the remote repository on GitHub. In Week 2, you'll copy it to your local machine so that the two are connected.
+
+## Watch this video for a quick recap of what you've learned:
+
+**["A Brief introduction to Git for beginners," GitHub](https://youtu.be/r8jQ9hVA2qs?si=Xu9VhBhk-sqBSYFa)**
+
+## The Git / GitHub Workflow
+
+The following image shows the full workflow you'll be using over the next three weeks. Pay attention to where files are located at each step — either on your local machine or remotely on GitHub.
+
+This week, we are completing the portion of the workflow outlined with the red dashed line. We will work on the remaining steps in Weeks 2 and 3.
+
+> ![Git Flow Diagram — Week 1](link-to-diagram)
+
+## Assignment — Create a Repository
 
 Create a new repository in your GitHub account by following these steps:
 
-- [ ] Go to your GitHub page and click the **Repositories** tab
-- [ ] Click the green "New" button in the top right
-- [ ] Fill in the fields to give your repository a name (use your name-**_classname_** as the name example: `maria-santiago-python-intro`) and description (example: classwork for Python Intro course with Code the Dream)
-- [ ] Be sure PUBLIC is selected and check the "Initialize this repository with: Add a README file" check box.
-- [ ] Click "Create Repository"
-- [ ] When you submit your assignment this week, please copy and paste the link to the repository you created in the "second link to assignment" field.
+- [ ] Go to [github.com](https://github.com) and log in
+- [ ] Click the **+** icon in the top-right corner and select **New repository**
+- [ ] Name your repository using the format `firstname-lastname-python` (example: `maria-santiago-python`)
+- [ ] Add a short description (example: *Homework for Intro to Python with Code the Dream*)
+- [ ] Make sure **Public** is selected
+- [ ] Check the box for **Add a README file**
+- [ ] Click **Create repository**
+- [ ] When you submit your assignment this week, paste the link to your new repository into the submission form
 
-## Git / GitHub Workflow
+## Further Reading
 
-The following image shows the entire workflow involved in using Git and GitHub. Pay attention to where files are located in each step - either on your local machine or remote in GitHub.
-
-> To Do: Explain more of this.
-
-In this lesson, we have completed the portion of the workflow outlined with the red dashed line. We will work on the remaining workflow in Lessons 2, 3 and 4.
-![image](https://github.com/Code-the-Dream-School/intro-to-programming-2026/blob/main/assets/Lesson01/GitFlow-Lesson01.jpg?raw=true)
+* ["About GitHub and Git," GitHub Docs](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
+* ["Introduction to Git and GitHub," W3Schools](https://www.w3schools.com/git/git_intro.asp)
