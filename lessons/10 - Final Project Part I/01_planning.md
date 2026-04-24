@@ -1,15 +1,5 @@
 # Planning Your Project
 
-> **Source:** New content
->
-> **Notes for content development:** This is Phase 0 — a structured planning step students complete before writing any code. The goal is to prevent the common beginner mistake of trying to design and code simultaneously. Walking through the API response and sketching function signatures in plain English before opening an editor meaningfully reduces integration friction later. Frame this as a short, low-stakes activity ("15 minutes of planning that will save you hours later"), not a formal deliverable. Cover:
-> - Opening the API URL directly in a browser and reading the raw JSON
-> - Identifying which fields to use and which to ignore
-> - Answering five planning questions in writing before coding
-> - Cloning the starter repository and verifying the environment
-
----
-
 ## Before You Write Code
 
 The most common sticking point in a project like this isn't writing Python — it's figuring out *what* to write. Students who skip straight to code often end up rewriting functions multiple times because they didn't know what shape their data was in.
