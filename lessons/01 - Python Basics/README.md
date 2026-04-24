@@ -4,7 +4,7 @@ Welcome to **Intro to Python**!
 
 **Lesson Overview**
 
-> Add narrative summary of the lesson.
+We're kicking off the course with some foundational Python knowledge: variables, data types, print/input, writing simple scripts, and basic debugging in Python. The lesson material will also introduce you to the basic concepts of version control. By the end of this week, you will feel confident writing your first programs in Python.
 
 ## How to Navigate this Course
 
