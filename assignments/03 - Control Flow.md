@@ -84,7 +84,7 @@ False   # not True is False; False and False is False
 
 ### Warmup 4: Sign and Parity
 
-Ask the user for a number. Using two **separate** `if`/`elif`/`else` blocks — one for sign, one for parity — print two lines of output:
+Ask the user for a number. Using two **separate** `if`/`elif`/`else` blocks — one for sign, one for parity — print two lines of output. The examples below show the format for two different inputs — your number will differ:
 
 ```
 Enter a number: -7
@@ -113,7 +113,7 @@ Write a program that asks the user for a **day of the week** and a **time of day
 - Handle any unrecognized day or time with a friendly fallback message
 - Normalize input so capitalization doesn't matter (e.g., `"Monday"` and `"monday"` both work)
 
-Example output:
+Example output (the suggestion and fallback wording are your own — any sensible messages are fine):
 ```
 What day is it? Tuesday
 What time of day? morning
@@ -151,7 +151,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in your pull request description or the `URL1` field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -195,3 +195,57 @@ git pull origin main          # bring the merged changes back to your local mach
 
 * Committed to main by accident? (You forgot to create your branch first.) Make the branch now: `git checkout -b assignment-N` carries your latest commits with it, then continue. Your work isn't lost.
 * `git push` says your branch has "no upstream"? You haven't pushed this branch before. Run `git push origin assignment-N` to create it on your fork.
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's forked `python-intro-homework` repo, on an
+`assignment-3` branch, with files inside a `week-3/assignment-3/` folder.
+`Example — adapt to your own layout`: the folder path and repo location are
+organizational conventions — do NOT fail correct code for sitting in a different
+folder or path; the reviewer cannot see the student's filesystem. Submission
+mechanics (branch, PR base) are not graded from the code. Expected files:
+`warmup1.py`, `warmup2.py`, `warmup3.py`, `warmup4.py`, `mini_project.py`.
+
+- **Warmup 1 — Letter Grades** — a hardcoded `score`, then an `if`/`elif`/`else`
+  chain that prints the letter grade using the table (90–100 A, 80–89 B, 70–79 C,
+  60–69 D, below 60 F). `Example — adapt to your own layout`: the score (84) is the
+  student's own pick — do not require a specific value. Required: boundaries land
+  right (90→A, 80→B, 70→C, 60→D, below 60→F) and `elif` is used so only one branch
+  fires.
+- **Warmup 2 — Age Categories** — `input()` → `int()`, then `if`/`elif`/`else`
+  using `and` to bound the ranges (0–12 Child, 13–17 Teen, 18–64 Adult, 65+
+  Senior). `Example — adapt to your own layout`: the age (16) comes from input.
+  Required: `int()` conversion, and ranges bounded so they don't overlap.
+- **Warmup 3 — Boolean Expression Practice** — prints the five given expressions,
+  each with a `#` comment explaining why. `Use exactly as written`: evaluate
+  exactly the five expressions shown; the results are `False`, `True`, `False`,
+  `False`, `True`. `Example — adapt to your own layout`: the comment wording is the
+  student's own — accept any sound reasoning; do not require the literal sample
+  comment text.
+- **Warmup 4 — Sign and Parity** — `input()` → number, then two **separate**
+  `if`/`elif`/`else` blocks (one for sign, one for parity), printing two lines; `0`
+  handled as its own sign case. `Example — adapt to your own layout`: the number
+  (−7, 0) comes from input and the exact sentence wording is flexible. Required:
+  `0` reported as zero (not positive/negative), parity via `% 2` (works for
+  negatives), and two independent blocks rather than one merged chain.
+- **Mini-Project — Day Planner (`mini_project.py`)** — asks for a day and a time of
+  day, normalizes input so capitalization doesn't matter, suggests an activity, and
+  gives a fallback for any unrecognized day or time. `Example — adapt to your own
+  layout`: the suggestion and fallback wording are the student's own — any sensible,
+  distinct messages pass. Required: at least 9 day×time combinations (≥3 days × 3
+  times) with distinct suggestions, case-normalized input (e.g. `.lower()`), and a
+  fallback message.
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything about
+  the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
+</details>
