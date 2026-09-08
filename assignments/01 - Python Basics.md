@@ -14,8 +14,8 @@ When you're finished, you'll upload your code to the GitHub repository you creat
 > **Don't feel concerned if the GitHub steps feel unfamiliar.** Terms like "branch" and "pull request" will be covered in detail in Weeks 2 and 3. For now, just follow the steps below. You don't need to understand what they mean yet.
 
 Submit two links in CTD Learns:
-- **Link to assignment:** A link to your pull request on GitHub (see steps below)
-- **Second link to assignment:** A link to your video reflection
+- **URL1:** A link to your pull request on GitHub (see steps below)
+- **URL2:** A link to your video reflection
 
 ---
 
@@ -40,7 +40,7 @@ Scroll down to the **Commit new file** section at the bottom of the page.
 4. Click **Propose new file**
 5. On the next page (Open a pull request), click **Create pull request**
 
-You now have an open pull request. Copy the URL from your browser's address bar — it will look like `https://github.com/your-username/your-repo-name/pull/1`. This is what you submit in CTD Learns as the **Link to assignment**.
+You now have an open pull request. Copy the URL from your browser's address bar — it will look like `https://github.com/your-username/your-repo-name/pull/1`. This is what you submit in CTD Learns as **URL1**.
 
 ### If you need to update your submission
 
@@ -95,7 +95,7 @@ Use your own values — not the ones above!
 
 ### Section 2: User Input and Math
 
-Add to your script: use `input()` to ask for the user's name and the year they were born. Compute their approximate age and print a sentence:
+Add to your script: use `input()` to ask for the user's name and the year they were born. Compute their approximate age and print a sentence. The example below shows the format — your greeting will use the name and birth year the user types:
 
 ```
 Hi, Jordan! You are approximately 24 years old.
@@ -107,10 +107,10 @@ Hi, Jordan! You are approximately 24 years old.
 
 ### Section 3: Type Conversion and f-strings
 
-Add to your script: ask the user to enter two numbers (as separate inputs). Convert both to `float`, multiply them, and print the result using an f-string:
+Add to your script: ask the user to enter two numbers (as separate inputs). Convert both to `float`, multiply them, and print the result using an f-string. The example below shows the format — your two numbers and their product will differ:
 
 ```
-12.5 * 4.0 = 50.0
+12.5 × 4.0 = 50.0
 ```
 
 ---
@@ -131,7 +131,7 @@ Total:     $59.98
 ===========================
 ```
 
-Use your own item, price, and quantity.
+Use your own item, price, and quantity. The border style and spacing above are an example — any clean, labeled layout is fine, as long as the total is computed from your variables.
 
 ---
 
@@ -157,7 +157,7 @@ Fun fact:   I've visited 12 countries.
 Age:        27
 ```
 
-Align the labels so the output looks clean.
+Align the labels so the output looks clean. The border style above is an example — any clean, aligned layout is fine.
 
 ---
 
@@ -176,7 +176,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in the **Second link to assignment** field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -185,13 +185,41 @@ Include the video link in the **Second link to assignment** field in the submiss
 
 ### Required Deliverables/Tasks
 
-- **Section 1 — Variables and Types** — declare four variables, one each of `str`, `int`, `float`, and `bool`, and print each with `type()`. The shown `name = "Alex"`, `age = 27`, etc. are `Example — adapt to your own layout` (the assignment says "use your own values") — do not fail different names or values. Required: the four types and printing each value with its type.
-- **Section 2 — User Input and Math** — use `input()` for the name and birth year, convert the year to `int`, compute the approximate age, and print a sentence (e.g. "Hi, Jordan! You are approximately 24 years old."). Name and number come from input — `Example — adapt to your own layout`; do not fail different wording or values.
-- **Section 3 — Type Conversion and f-strings** — take two numeric inputs, convert both to `float`, multiply, and print the result with an f-string. `12.5 * 4.0 = 50.0` is `Example — adapt to your own layout` (values come from input; the exact format is illustrative — do not fail a different one).
-- **Section 4 — Formatted Receipt** — using variables only (no `input()`), store item, price, and quantity, compute the total *from those variables*, and print a formatted receipt. Values are `Example — adapt to your own layout` ("use your own item, price, and quantity"); banner width and characters are decorative — do not fail on them. Required: the total is computed, not hardcoded.
-- **Section 5 — Mini-Project: Profile Card** — use `input()` for name, hometown, hobby, fun fact, and birth year; compute age from the birth year (do not ask for it directly); print a formatted profile card with f-strings. Box art and alignment are `Example — adapt to your own layout` — do not fail on exact box characters.
-- **Video Reflection** — a 3–5 minute video answering the three listed questions; submit the link as the **Second link to assignment**.
-- **Submission** — `assignment-1.py` committed on an `assignment-1` branch with an open pull request (the **Link to assignment**). Filename and branch used as written; the repo name (`maria-santiago-python`) is `Example — adapt to your own layout`.
+All five sections live in one file, `assignment-1.py`, added in order. Earlier
+sections stay above later ones — do NOT fail a submission for keeping earlier
+sections in the file. Submission mechanics (GitHub branch, pull request) are not
+graded from the code.
+
+- **Section 1 — Variables and Types** — four variables, one each of `str`, `int`,
+  `float`, and `bool`, each printed with `type()`. `Example — adapt to your own
+  layout`: do not fail values that differ from `Alex`/`27`/`5.9`/`True`; the four
+  types and the `type()` call are what matter. (Watch: a number in quotes like
+  `"27"` is a `str`, not an `int`.)
+- **Section 2 — User Input and Math** — uses `input()` for a name and birth year,
+  converts the birth year with `int()`, computes an approximate age, and prints a
+  greeting sentence. `Example — adapt to your own layout`: the name and age in
+  "Hi, Jordan! ... 24 years old." are samples; do not require the literal
+  "Jordan" or "24". Required: age is computed from the birth year, not asked for
+  directly.
+- **Section 3 — Type Conversion and f-strings** — two separate numeric inputs,
+  both cast to `float`, multiplied, product printed with an f-string. `Example —
+  adapt to your own layout`: do not require the literal `12.5`/`4.0`/`50.0`, and
+  accept the multiply symbol written as `×`, `x`, or `*`.
+- **Section 4 — Formatted Receipt** — item, price, and quantity stored in
+  variables (no `input()` here), total computed from them, printed as a labeled
+  receipt with money shown to two decimals (`:.2f`). `Example — adapt to your own
+  layout`: student's own item/price/quantity expected; border characters and exact
+  spacing are a sample — do not fail a different layout. Required: the total is
+  computed, not hard-coded as a literal.
+- **Section 5 — Mini-Project: Profile Card** — five inputs (name, hometown, hobby,
+  fun fact, birth year), age computed from the birth year, card printed with
+  f-strings and aligned labels. `Example — adapt to your own layout`: values come
+  from user input, and any border style or alignment approach is fine. Formatting
+  is subjective — accept any clean, readable card; only messy, unreadable output
+  is a problem.
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything about
+  the video.
 
 ### Optional Deliverables/Tasks
 
