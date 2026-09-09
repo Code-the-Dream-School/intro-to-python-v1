@@ -10,7 +10,47 @@
 
 The PR URL should look like `github.com/your-username/python-intro-homework/pull/[number]`, *not the link to your repo homepage*.
 
-> **Note:** This assignment makes live network requests. Make sure your virtual environment has `requests` installed (`pip install requests`) and your `requirements.txt` is up to date.
+---
+
+## Before You Start: Get Your API Key
+
+The REST Countries API used in Warmup 3 and the mini-project requires a free API key. Real-world APIs almost always work this way, so this is good practice for the kind of setup you will do on the job.
+
+**Set up your key:**
+
+1. Go to [restcountries.com/sign-up](https://restcountries.com/sign-up) and create a free account with your email and a password.
+2. Confirm your email address by clicking the link that REST Countries sends you.
+3. Sign in, open your account dashboard, and copy your API key.
+
+Your free account includes **1,000 requests per month**. That is plenty for this assignment, as long as you fetch the data once when your script starts instead of fetching inside a loop.
+
+**Keep your key out of your code.** Your key is tied to your account, and your repository is public — anyone could copy a key that you push to GitHub. Store it in an environment variable instead, and read it with the `os` module from Week 7:
+
+```python
+import os
+
+API_KEY = os.environ.get("RESTCOUNTRIES_API_KEY")
+
+if not API_KEY:
+    print("No API key found. Set RESTCOUNTRIES_API_KEY and try again.")
+    exit()
+```
+
+Set the variable in your terminal before you run your script:
+
+- **macOS / Linux:** `export RESTCOUNTRIES_API_KEY="your_key_here"`
+- **Windows PowerShell:** `$env:RESTCOUNTRIES_API_KEY="your_key_here"`
+
+This lasts for your current terminal session, so set it again each time you open a new terminal.
+
+**Send your key with every request.** The API expects your key in an `Authorization` header. Without it, every request comes back with a `401` status code and no data:
+
+```python
+headers = {"Authorization": f"Bearer {API_KEY}"}
+response = requests.get(url, headers=headers)
+```
+
+You also need `requests` installed in your virtual environment (`pip install requests`), and your `requirements.txt` should be up to date.
 
 ---
 
@@ -28,7 +68,7 @@ Use `requests.get()` to fetch from this endpoint:
 https://api.agify.io/?name=michael
 ```
 
-Print the HTTP status code and the full JSON response:
+Print the HTTP status code and the full JSON response. The example below shows the format — this is a live API whose data changes, so your age and count will differ:
 
 ```
 Status code: 200
@@ -41,7 +81,7 @@ Response: {'name': 'michael', 'age': 40, 'count': 112758}
 
 ### Warmup 2: Access Specific JSON Fields
 
-Using the same API from Warmup 1, access and print just the `name` and `age` fields from the response. Then try accessing a key that doesn't exist (e.g., `"birthday"`) — use `.get()` to avoid a `KeyError` and print a fallback message instead:
+Using the same API from Warmup 1, access and print just the `name` and `age` fields from the response. Then try accessing a key that doesn't exist (e.g., `"birthday"`) — use `.get()` to avoid a `KeyError` and print a fallback message instead. The example below shows the format — the predicted age comes from a live API and will differ, and your fallback wording is your own:
 
 ```
 Name: michael
@@ -58,10 +98,10 @@ Birthday: Not available
 Fetch from this endpoint, which returns a list of countries in Europe:
 
 ```
-https://api.restcountries.com/countries/v5/region/Europe?response_fields=names.official,population
+https://api.restcountries.com/countries/v5/region/Europe?response_fields=names.common,population
 ```
 
-Loop through the response list and print the common name of each country on its own line. Print only the first 10 results.
+Loop through the response list and print the common name of each country on its own line. Print only the first 10 results. The example below shows the format — it is truncated, and your results come from a live API, so they might differ:
 
 ```
 Albania
@@ -70,7 +110,7 @@ Austria
 ...
 ```
 
-> **Hint:** Each item in the list is a dict. The country name is nested: `item["name"]["common"]`.
+> **Hint:** The countries come back inside the response, at `response.json()["data"]["objects"]`. Each item in that list is a dict, and the country name is nested: `item["names"]["common"]`.
 
 **Save as:** `warmup3.py`
 
@@ -80,7 +120,7 @@ Austria
 
 Write a script that wraps a `requests.get()` call in `try`/`except requests.exceptions.RequestException` to handle network errors. Also check the response status code — if it's not 200, print an error message instead of trying to parse the response.
 
-Test it by using a URL you know will fail (e.g., `https://thisurldoesnotexist.example.com`).
+Test it by using a URL you know will fail (e.g., `https://thisurldoesnotexist.example.com`). The example below shows the format — your message wording might differ:
 
 ```
 Error: Could not reach the server. Check your connection and try again.
@@ -96,7 +136,7 @@ Use the REST Countries API to build an interactive command-line tool. This is th
 
 **Fetch URL:**
 ```
-https://api.restcountries.com/countries/v5?response_fields=names.official,capitals,region,population
+https://api.restcountries.com/countries/v5?response_fields=names.common,capitals,region,population
 ```
 
 **Sample Response:**
@@ -221,7 +261,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in your pull request description or the `URL1` field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -236,7 +276,8 @@ This is your repeatable workflow for every assignment. Wherever you see `assignm
 
 **Get a clean starting point:**
 
-```git checkout main
+```bash
+git checkout main
 git pull origin main
 git checkout -b assignment-N   # replace N: e.g. assignment-3
 ```
@@ -245,7 +286,7 @@ git checkout -b assignment-N   # replace N: e.g. assignment-3
 
 **Save your progress:**
 
-```
+```bash
 git status                    # see what's changed (run this often)
 git add .                     # stage all changes
 git commit -m "describe what you did and why"
@@ -258,9 +299,9 @@ Repeat `add → commit → push` as often as you like. Committing often gives yo
 
 On GitHub, open a pull request from `assignment-N` into main. Confirm the base repository is your own fork (`your-username/python-intro-homework`), not `Code-the-Dream-School`.
 
-**Close the looop:**
+**Close the loop:**
 
-```
+```bash
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
@@ -269,4 +310,95 @@ git pull origin main          # bring the merged changes back to your local mach
 
 * Committed to main by accident? (You forgot to create your branch first.) Make the branch now: `git checkout -b assignment-N` carries your latest commits with it, then continue. Your work isn't lost.
 * `git push` says your branch has "no upstream"? You haven't pushed this branch before. Run `git push origin assignment-N` to create it on your fork.
+</details>
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's forked `python-intro-homework` repo, on an
+`assignment-9` branch, with files inside a `week-9/assignment-9/` folder.
+`Example — adapt to your own layout`: the folder path and repo location are
+organizational conventions — do NOT fail correct code for sitting in a different
+folder or path; the reviewer cannot see the student's filesystem. Submission
+mechanics (branch, PR base) are not graded from the code. This repo is
+cumulative — folders from earlier weeks are expected to remain; do not tell the
+student to remove prior-week work. The assignment assumes the virtual environment
+and `requirements.txt` from Assignment 8; the reviewer cannot see either, so do
+not fail their absence. Expected files: `warmup1.py`, `warmup2.py`, `warmup3.py`,
+`warmup4.py`, `mini_project.py`.
+
+**This assignment calls live APIs, so almost nothing about the returned data can
+be verified.** Every value in every example — ages, counts, country names,
+capitals, populations — comes from a live service and changes over time. Grade the
+code's structure and behavior, never the specific values it prints. **Do not fail a
+student for which key names they used to reach the data** — any reasonable parsing
+of the response they actually received is correct.
+
+**On the API key:** the REST Countries endpoints require a free key that each student
+signs up for themselves. **The reviewer cannot see a student's key**, because the
+assignment tells them to keep it in an environment variable rather than in the code —
+so an absent key value is expected and must NEVER be failed, and neither is a missing
+`.env` file, dashboard, or terminal setup. What *can* be checked in the code: that the
+request sends an `Authorization` header carrying the key, and that the key is read from
+the environment (for example with `os.environ.get()`) instead of being written
+literally in the file. A key hardcoded into a committed file is worth flagging, since
+the assignment explicitly tells students not to do that.
+
+- **Warmup 1 — Make Your First API Request** — uses `requests.get()` against the
+  agify endpoint and prints both the HTTP status code and the full JSON response.
+  `Use exactly as written`: `requests.get()`. Required: both the status code and
+  the parsed response body are printed. `Example — adapt to your own layout`: the
+  age and count values (live data — the example's `age: 40, count: 112758` is
+  already out of date), and all label wording.
+- **Warmup 2 — Access Specific JSON Fields** — prints the `name` and `age` fields
+  from the same API, then uses `.get()` for a key that does not exist and prints a
+  fallback instead of raising `KeyError`. `Use exactly as written`: `.get()` for
+  the missing key. Required: two real fields printed, plus a fallback for the
+  missing one. `Example — adapt to your own layout`: the age value, the choice of
+  missing key, and the fallback wording ("Not available").
+- **Warmup 3 — Loop Through a JSON List** — fetches the region endpoint, loops the
+  returned list, and prints one country name per line, limited to the first 10.
+  Required: a loop over the response list, one name per line, and a limit of 10
+  results. `Example — adapt to your own layout`: the country names and their order
+  (live data), and which name field was used. Required: the request sends the
+  student's API key in an `Authorization` header — without it this endpoint returns
+  `401` and no data.
+- **Warmup 4 — Handle Request Errors** — wraps `requests.get()` in
+  `try`/`except requests.exceptions.RequestException` and also checks the status
+  code, printing an error message rather than parsing when the request fails or
+  the code is not 200. `Use exactly as written`: `except
+  requests.exceptions.RequestException`, and a status-code check against 200.
+  Required: both guards are present — the exception handler and the status check.
+  `Example — adapt to your own layout`: the failing URL used for the test and the
+  error message wording.
+- **Mini-Project — Country Explorer CLI (`mini_project.py`)** — fetches all
+  countries once at startup, parses them into a list of dictionaries carrying a
+  name, capital, region, and population for each, then runs a `while`-loop menu
+  with three options (1 search by name, 2 filter by region, 3 quit) that
+  redisplays until the user quits. Required, because the assignment states each
+  one: option 1 does a **case-insensitive partial** match and prints each match
+  with capital, region, and population; option 2 filters by region and prints the
+  results **sorted by population, largest first**; countries with no capital
+  display `N/A` rather than crashing; and the initial request is wrapped in
+  `try`/`except` with a status-code check that prints a message and exits on
+  failure. `Example — adapt to your own layout`: the menu text and layout, all
+  separators and message wording, the number formatting (thousands separators are
+  not required), and every country value shown — names, capitals, regions, and
+  populations all come from a live API. The dictionary keys the student chooses
+  are their own, so do not fail a different key structure. Required: the request
+  sends the student's API key in an `Authorization` header, and the data is fetched
+  once at startup rather than on every menu action (the free plan allows 1,000
+  requests per month).
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything
+  about the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
 </details>
