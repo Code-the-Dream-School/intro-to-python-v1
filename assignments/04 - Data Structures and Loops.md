@@ -72,7 +72,7 @@ Using loops and data structure operations, your script must:
 1. **Find the top scorer** — loop through the list and track the highest score and the name that goes with it. Do not use Python's built-in `max()` on the list directly.
 2. **Calculate the class average** — accumulate the total score in a loop, then divide.
 3. **List all unique subjects** — use a set to collect subjects as you loop, then print them.
-4. **List high scorers** — use a use a loop and `.append()` to get the names of all students who scored above 75.
+4. **List high scorers** — use a loop and `.append()` to get the names of all students who scored above 75.
 
 Example output:
 ```
@@ -101,7 +101,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in your pull request description or the `URL1` field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -111,7 +111,8 @@ This is your repeatable workflow for every assignment. Wherever you see `assignm
 
 **Get a clean starting point:**
 
-```git checkout main
+```bash
+git checkout main
 git pull origin main
 git checkout -b assignment-N   # replace N: e.g. assignment-3
 ```
@@ -120,7 +121,7 @@ git checkout -b assignment-N   # replace N: e.g. assignment-3
 
 **Save your progress:**
 
-```
+```bash
 git status                    # see what's changed (run this often)
 git add .                     # stage all changes
 git commit -m "describe what you did and why"
@@ -133,9 +134,9 @@ Repeat `add → commit → push` as often as you like. Committing often gives yo
 
 On GitHub, open a pull request from `assignment-N` into main. Confirm the base repository is your own fork (`your-username/python-intro-homework`), not `Code-the-Dream-School`.
 
-**Close the looop:**
+**Close the loop:**
 
-```
+```bash
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
@@ -144,3 +145,60 @@ git pull origin main          # bring the merged changes back to your local mach
 
 * Committed to main by accident? (You forgot to create your branch first.) Make the branch now: `git checkout -b assignment-N` carries your latest commits with it, then continue. Your work isn't lost.
 * `git push` says your branch has "no upstream"? You haven't pushed this branch before. Run `git push origin assignment-N` to create it on your fork.
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's forked `python-intro-homework` repo, on an
+`assignment-4` branch, with files inside a `week-4/assignment-4/` folder.
+`Example — adapt to your own layout`: the folder path and repo location are
+organizational conventions — do NOT fail correct code for sitting in a different
+folder or path; the reviewer cannot see the student's filesystem. Submission
+mechanics (branch, PR base) are not graded from the code. This repo is
+cumulative — folders from earlier weeks are expected to remain; do not tell the
+student to remove prior-week work. Expected files: `warmup1.py`, `warmup2.py`,
+`warmup3.py`, `mini_project.py`.
+
+- **Warmup 1 — List Operations** — a hardcoded list of 8 numbers, then four
+  printed results: the first item, the last item using a negative index, a slice
+  of the middle four items, and the full list reversed. `Example — adapt to your
+  own layout`: the numbers and the label wording (`First:`, `Last:`, etc.) are the
+  student's own — the assignment says the numbers will differ. Required: no loops
+  in this file, a negative index for the last item, and a four-item middle slice.
+- **Warmup 2 — Dictionary Operations** — a hardcoded dictionary printed pair by
+  pair with `.items()` in a `for` loop, then a new key added and the updated
+  dictionary printed. `Use exactly as written`: the keys `name`, `grade`, and
+  `subjects`, and the added key `"graduated"` with the value `False`. `Example —
+  adapt to your own layout`: the student's own name, grade, and subject values.
+  Required: `subjects` holds a list of strings, and `.items()` is used.
+- **Warmup 3 — Set Operations** — two hardcoded lists of programming languages
+  with some overlap, each converted to a set, then the union, the intersection,
+  and the difference (first list only) printed. `Example — adapt to your own
+  layout`: the languages are the student's own pick. Required: sets used rather
+  than manual de-duplication, and all three operations printed.
+- **Mini-Project — Student Roster Analyzer (`mini_project.py`)** — the `students`
+  list copied in from the provided `week-4/data/roster.py`, then four results
+  printed: the top scorer's name and score, the class average, the unique
+  subjects, and the names scoring above 75. Required: the top scorer is found with
+  a loop that tracks the highest score and its name (calling `max()` on the list
+  directly is not allowed), the class average accumulates a total in a loop and
+  then divides (`sum()` is not allowed), a set collects the subjects, and the high
+  scorers are gathered with a loop and `.append()`. The assignment states each of
+  these constraints, so hold the line on them. `Example — adapt to your own
+  layout`: the sample values (`Priya (95)`, `81.25`, etc.) come from the provided
+  data file, and the output labels and spacing are the student's own — do not fail
+  differing formatting, and do not fail on the data file's path (the reviewer
+  cannot see the provided file or the student's filesystem).
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything
+  about the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
+</details>

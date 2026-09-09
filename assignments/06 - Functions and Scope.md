@@ -26,7 +26,8 @@ Write a function `greet(name, greeting="Hello")` that prints a greeting. Call it
 2. With both a name and a custom greeting
 3. With the greeting passed as a keyword argument
 
-Expected output:
+Example output — your name and custom greeting might differ:
+
 ```
 Hello, Alex!
 Good morning, Alex!
@@ -44,6 +45,8 @@ Write two functions:
 - `fahrenheit_to_celsius(f)` — converts Fahrenheit to Celsius using `(f - 32) * 5/9`
 
 Call each with a few test values and print the results. Use f-strings and round to one decimal place.
+
+Example output — your test values and wording might differ:
 
 ```
 0°C = 32.0°F
@@ -68,7 +71,7 @@ Demonstrate variable scope with two short examples in one file:
 
 ### Warmup 4: Validation Function
 
-Write a function `is_valid_score(score)` that returns `True` if `score` is an integer between 0 and 100 (inclusive), and `False` otherwise. Then use `input()` to ask the user for a score. Call your function inside an `if` statement and print either `"Valid score."` or `"Invalid score — must be between 0 and 100."`.
+Write a function `is_valid_score(score)` that returns `True` if `score` is an integer between 0 and 100 (inclusive), and `False` otherwise. Then use `input()` to ask the user for a score and convert it to an integer with `int()` before you check it. Call your function inside an `if` statement and print either `"Valid score."` or `"Invalid score — must be between 0 and 100."`.
 
 **Save as:** `warmup4.py`
 
@@ -117,7 +120,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in your pull request description or the `URL1` field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -127,7 +130,8 @@ This is your repeatable workflow for every assignment. Wherever you see `assignm
 
 **Get a clean starting point:**
 
-```git checkout main
+```bash
+git checkout main
 git pull origin main
 git checkout -b assignment-N   # replace N: e.g. assignment-3
 ```
@@ -136,7 +140,7 @@ git checkout -b assignment-N   # replace N: e.g. assignment-3
 
 **Save your progress:**
 
-```
+```bash
 git status                    # see what's changed (run this often)
 git add .                     # stage all changes
 git commit -m "describe what you did and why"
@@ -149,9 +153,9 @@ Repeat `add → commit → push` as often as you like. Committing often gives yo
 
 On GitHub, open a pull request from `assignment-N` into main. Confirm the base repository is your own fork (`your-username/python-intro-homework`), not `Code-the-Dream-School`.
 
-**Close the looop:**
+**Close the loop:**
 
-```
+```bash
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
@@ -160,3 +164,85 @@ git pull origin main          # bring the merged changes back to your local mach
 
 * Committed to main by accident? (You forgot to create your branch first.) Make the branch now: `git checkout -b assignment-N` carries your latest commits with it, then continue. Your work isn't lost.
 * `git push` says your branch has "no upstream"? You haven't pushed this branch before. Run `git push origin assignment-N` to create it on your fork.
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's forked `python-intro-homework` repo, on an
+`assignment-6` branch, with files inside a `week-6/assignment-6/` folder.
+`Example — adapt to your own layout`: the folder path and repo location are
+organizational conventions — do NOT fail correct code for sitting in a different
+folder or path; the reviewer cannot see the student's filesystem. Submission
+mechanics (branch, PR base) are not graded from the code. This repo is
+cumulative — folders from earlier weeks are expected to remain; do not tell the
+student to remove prior-week work. This assignment refactors Assignment 5's
+mini-project into a **new** file, so a second `mini_project.py` under `week-6/`
+alongside the Week 5 one is correct and expected — do not treat either copy as
+duplicated or stray code, and do not fault the student for leaving the Week 5
+file unchanged (the assignment tells them not to modify it). The reviewer cannot
+see Assignment 5's file or the provided `week-5/data/numbers.py` — grade the new
+file on its own and do not fail anything that depends on seeing them. Expected
+files: `warmup1.py`, `warmup2.py`, `warmup3.py`, `warmup4.py`, `mini_project.py`.
+
+- **Warmup 1 — Default Parameters** — a function `greet(name, greeting="Hello")`
+  that prints a greeting, called three ways: with the name only, with a name and a
+  custom greeting, and with the greeting passed as a keyword argument. `Use exactly
+  as written`: the function name `greet`, its parameter names `name` and `greeting`,
+  and the default value `"Hello"`. `Example — adapt to your own layout`: the name
+  ("Alex"), the custom greeting ("Good morning"), and all printed wording are the
+  student's own — grade the three call styles, not the strings.
+- **Warmup 2 — Functions that Return Values** — two functions,
+  `celsius_to_fahrenheit(c)` and `fahrenheit_to_celsius(f)`, each **returning**
+  (not printing) its result, then called with a few values and printed with
+  f-strings rounded to one decimal place. `Use exactly as written`: the function
+  names, and the formulas `(c * 9/5) + 32` and `(f - 32) * 5/9`. `Example — adapt
+  to your own layout`: the test values (0, 100, 72) and the output wording are the
+  student's own — check the math instead (0°C → 32.0°F, 100°C → 212.0°F,
+  72°F → 22.2°C). Required: both functions `return` a value, and results show one
+  decimal place.
+- **Warmup 3 — Scope in Action** — one file with two demonstrations: a variable
+  defined inside a function that is inaccessible outside it, with the `NameError`
+  pasted in a comment and the offending line removed or commented out; then the
+  same value returned from the function, assigned in the outer scope, and printed.
+  Required: the submitted file runs without error (the failing line is not left
+  live), and the second demonstration uses `return`. `Example — adapt to your own
+  layout`: the variable names, the pasted error text, and all wording are the
+  student's own.
+- **Warmup 4 — Validation Function** — a function `is_valid_score(score)` that
+  returns `True` for an integer from 0 to 100 inclusive and `False` otherwise, then
+  `input()` for a score, converted to an integer with `int()`, and the function
+  called inside an `if` that prints one of the two messages. `Use exactly as
+  written`: the function name `is_valid_score`, and the messages `Valid score.` and
+  `Invalid score — must be between 0 and 100.`. Required, because the assignment
+  states each one: the function **returns** a boolean rather than printing, the
+  input is converted to an integer with `int()` before it is checked, and 0 and 100
+  both count as valid. Do NOT additionally require `try`/`except` around the
+  conversion — the assignment does not ask for it, so a crash on non-numeric input
+  is not a failure.
+- **Mini-Project — Refactor the Number Cruncher (`mini_project.py`)** — a new file
+  with the `numbers` list copied in, defining six functions: `find_min(numbers)`,
+  `find_max(numbers)`, `search(numbers, target)`, `bubble_sort(numbers)`,
+  `show_menu()`, and `main()`, with `main()` called at the bottom. `Use exactly as
+  written`: those six function names and their parameters, and `-1` as `search`'s
+  not-found return value. Required, because the assignment states each one: no
+  `min()` and no `max()` (the loop-based implementations carry over), `bubble_sort`
+  returns a **new** list rather than sorting in place, `search` returns the index
+  and does not print (the "Found at index X" / "Not found" message is printed from
+  `main()`), and no logic lives outside a function apart from the `numbers` list
+  and the `main()` call. `Example — adapt to your own layout`: the menu text and
+  all message wording, and the list's contents (they come from the Week 5 data
+  file) — do not fail on specific values, on menu formatting, or on the data
+  file's path.
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything
+  about the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
+</details>

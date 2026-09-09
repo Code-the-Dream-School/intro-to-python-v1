@@ -14,13 +14,13 @@ The PR URL should look like `github.com/your-username/python-intro-homework/pull
 
 ## Part 1: Warmup Exercises
 
-Complete each of the following short exercises as a separate Python file.
+Complete each of the following short exercises as a separate Python file. Data files for this week are in the `week-8/data/` folder — reference them from your `assignment-8/` working directory using the path `../data/filename`.
 
 ---
 
 ### Warmup 1: Validate Numeric Input
 
-Write a loop that asks the user to enter a number. If they enter something that can't be converted to a number, catch the `ValueError` with `try`/`except`, print a message, and ask again. Once you have a valid number, print it and stop:
+Write a loop that asks the user to enter a number. If they enter something that can't be converted to a number, catch the `ValueError` with `try`/`except`, print a message, and ask again. Once you have a valid number, print it and stop. The example session below shows the format — your inputs and message wording might differ:
 
 ```
 Enter a number: hello
@@ -37,7 +37,7 @@ You entered: 42.0
 
 ### Warmup 2: Safe Division
 
-Ask the user for two numbers. Compute the result of dividing the first by the second. Use `try`/`except ZeroDivisionError` to catch division by zero and print a friendly message instead of crashing:
+Ask the user for two numbers. Compute the result of dividing the first by the second. Use `try`/`except ZeroDivisionError` to catch division by zero and print a friendly message instead of crashing. The example sessions below show the format for two different inputs — your numbers and message wording might differ:
 
 ```
 Enter the numerator: 10
@@ -57,7 +57,7 @@ Enter the denominator: 4
 
 ### Warmup 3: Handle a Missing File
 
-Write a script that attempts to open `../data/missing.txt` (this file does not exist). Use `try`/`except FileNotFoundError` to catch the error and print a helpful message rather than a traceback:
+Write a script that attempts to open `../data/missing.txt` (this file does not exist). Use `try`/`except FileNotFoundError` to catch the error and print a helpful message rather than a traceback. The example below shows the format — your message wording might differ:
 
 ```
 Error: "missing.txt" was not found. Please check the file path and try again.
@@ -69,7 +69,7 @@ Error: "missing.txt" was not found. Please check the file path and try again.
 
 ### Warmup 4: Virtual Environment Setup
 
-Set up a virtual environment for your project, install the `requests` library, and generate a `requirements.txt` with `pip freeze`. Then write a short script that imports `requests` and prints its version. Paste the contents of your `requirements.txt` as a comment at the top of the file.
+Set up a virtual environment for your project, install the `requests` library, and generate a `requirements.txt` with `pip freeze`. Then write a short script that imports `requests` and prints its version. Paste the contents of your `requirements.txt` as a comment at the top of the file. The example below shows the format — your package list and version numbers will differ depending on when you install:
 
 ```python
 # requirements.txt contents:
@@ -80,7 +80,8 @@ Set up a virtual environment for your project, install the `requests` library, a
 # urllib3==2.2.1
 ```
 
-Expected output:
+Example output — your version number will differ:
+
 ```
 requests version: 2.31.0
 ```
@@ -95,11 +96,11 @@ The file `../data/messy_data.csv` contains a mix of valid and invalid rows. Each
 
 Write a script that reads this file defensively and produces a clean summary. Your program must:
 
-1. Use `try`/`except FileNotFoundError` to check that the file exists before opening it. If not, print an error and stop.
+1. Wrap the file opening in `try`/`except FileNotFoundError`. If the file is missing, print an error message and stop.
 2. Read the file with `csv.DictReader`.
 3. Process each row inside a `try`/`except` block. Catch at minimum:
    - `ValueError` — when `amount` can't be converted to `float`
-   - `KeyError` — when an expected column is missing from a row
+   - `KeyError` — in case a row is missing an expected column. Include this clause even if it never runs while you test: `csv.DictReader` usually fills a missing column with `None` instead of raising, so a `KeyError` may not come up with this data. Catching it is still good defensive practice.
 4. Collect successfully parsed rows into a list of dictionaries.
 5. Print a summary at the end:
 
@@ -122,7 +123,7 @@ Clean data:
   ...
 ```
 
-> **Hint 1:** You can track skipped rows by storing a description of each failure, then printing them at the end. Use `enumerate()` to get row numbers as you loop.
+> **Hint 1:** You can track skipped rows by storing a description of each failure, then printing them at the end. Use `enumerate(reader, start=1)` to get row numbers as you loop, so your first data row is row 1 like the example above.
 
 > **Hint 2:** `csv.DictReader` handles extra fields by storing them under a `None` key rather than raising an exception, so you will need to check if `None in row` as a separate guard before the `try/except`. 
 
@@ -145,7 +146,7 @@ Your video should address the following questions. You don't need to cover every
 - Use screen sharing to walk through your code when relevant
 - Speak in your own words — no need to read from a script
 
-Include the video link in your pull request description or the `URL1` field in the submission form.
+Include the video link in the `URL2` field in the submission form.
 
 ---
 
@@ -160,7 +161,8 @@ This is your repeatable workflow for every assignment. Wherever you see `assignm
 
 **Get a clean starting point:**
 
-```git checkout main
+```bash
+git checkout main
 git pull origin main
 git checkout -b assignment-N   # replace N: e.g. assignment-3
 ```
@@ -169,7 +171,7 @@ git checkout -b assignment-N   # replace N: e.g. assignment-3
 
 **Save your progress:**
 
-```
+```bash
 git status                    # see what's changed (run this often)
 git add .                     # stage all changes
 git commit -m "describe what you did and why"
@@ -182,9 +184,9 @@ Repeat `add → commit → push` as often as you like. Committing often gives yo
 
 On GitHub, open a pull request from `assignment-N` into main. Confirm the base repository is your own fork (`your-username/python-intro-homework`), not `Code-the-Dream-School`.
 
-**Close the looop:**
+**Close the loop:**
 
-```
+```bash
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
@@ -193,4 +195,84 @@ git pull origin main          # bring the merged changes back to your local mach
 
 * Committed to main by accident? (You forgot to create your branch first.) Make the branch now: `git checkout -b assignment-N` carries your latest commits with it, then continue. Your work isn't lost.
 * `git push` says your branch has "no upstream"? You haven't pushed this branch before. Run `git push origin assignment-N` to create it on your fork.
+</details>
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's forked `python-intro-homework` repo, on an
+`assignment-8` branch, with files inside a `week-8/assignment-8/` folder, reading
+the provided data files in `week-8/data/` (reached as `../data/<filename>` from the
+working folder). `Example — adapt to your own layout`: the folder path and
+repo location are organizational conventions — do NOT fail correct code for
+sitting in a different folder or path; the reviewer cannot see the student's
+filesystem. **Any path form is acceptable** as long as the right file is opened.
+Do not fail a path, and do not fail anything that depends on seeing the provided
+data files, since the reviewer cannot read them. Submission mechanics (branch, PR
+base) are not graded from the code. This repo is cumulative — folders from earlier
+weeks are expected to remain; do not tell the student to remove prior-week work.
+Expected files: `warmup1.py`, `warmup2.py`, `warmup3.py`, `warmup4.py`,
+`mini_project.py`.
+
+- **Warmup 1 — Validate Numeric Input** — a loop that asks for a number, catches
+  `ValueError` with `try`/`except` when the input cannot be converted, prints a
+  message, and asks again, stopping once a valid number is entered. Required,
+  because the assignment states each one: `try`/`except` catching `ValueError`
+  specifically, a loop that repeats on bad input, and the value printed at the
+  end. `Example — adapt to your own layout`: the sample inputs (hello, abc, 42),
+  all prompt and message wording, and whether the result prints as `42.0` or `42`
+  — grade the behavior, not the strings.
+- **Warmup 2 — Safe Division** — asks for two numbers, divides the first by the
+  second, and catches `ZeroDivisionError` with `try`/`except` so a zero
+  denominator prints a message instead of crashing. `Use exactly as written`:
+  `except ZeroDivisionError` (not a bare `except`). `Example — adapt to your own
+  layout`: the sample numbers, the `÷` symbol, and all message wording are the
+  student's own.
+- **Warmup 3 — Handle a Missing File** — attempts to open a file that does not
+  exist and catches `FileNotFoundError`, printing a message instead of a
+  traceback. `Use exactly as written`: `except FileNotFoundError`. `Example —
+  adapt to your own layout`: the message wording — the assignment asks for "a
+  helpful message," so any clear message passes; do not require the sample text.
+  Required: the script runs to completion without showing a traceback.
+- **Warmup 4 — Virtual Environment Setup** — a script that imports `requests` and
+  prints its version, with the contents of a `pip freeze`-generated
+  `requirements.txt` pasted as a comment at the top. Required: `requests` is
+  imported, its version is printed, and a requirements comment block is present.
+  `Example — adapt to your own layout`: **every version number and the exact
+  package list — these depend on when the student installed, so
+  `requests==2.31.0` and the surrounding packages will not match. Do not fail a
+  different version or a different set of transitive dependencies.** Whether
+  `requirements.txt` is also committed as its own file is not specified by the
+  assignment — do not fail either choice. The virtual environment itself cannot be
+  seen by the reviewer; do not fail its absence.
+- **Mini-Project — Defensive CSV Reader (`mini_project.py`)** — reads a messy CSV
+  defensively and prints a summary. Required, because the assignment states each
+  step: the file opening is wrapped in `try`/`except FileNotFoundError` (printing
+  an error and stopping if missing), `csv.DictReader` reads the file, **each row is
+  processed inside its own `try`/`except` inside the loop** (not one `try` wrapped
+  around the whole loop), `ValueError` and `KeyError` are both caught, successfully
+  parsed rows are collected into a list of dictionaries, and a summary is printed
+  at the end. The summary must report rows attempted, rows parsed, rows skipped, a
+  list of the skipped rows with a reason for each, and the clean data. `Example —
+  adapt to your own layout`: the counts (14 / 9 / 5), the specific skipped-row
+  reasons, the row contents, and all labels, spacing, and separators — these come
+  from a data file the reviewer cannot read, so check that the summary reports
+  each of those five things, not that the numbers or formatting match. Note on
+  `KeyError`: `csv.DictReader` usually fills a missing column with `None` rather
+  than raising, so a correct submission may have an `except KeyError` clause that
+  never fires — require the clause to be present, but do not require evidence
+  that it triggered, and do not fail a student for also guarding extra columns
+  with a `None in row` check (Hint 2 tells them to).
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything
+  about the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
 </details>

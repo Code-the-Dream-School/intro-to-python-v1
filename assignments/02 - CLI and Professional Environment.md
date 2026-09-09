@@ -55,13 +55,13 @@ Run it from your terminal. Then paste the terminal command you used and the outp
 
 ### Warmup 2: Navigate with the CLI
 
-Using only your terminal (no file explorer), navigate to your `week-2/assignment-2/` folder. Then write a script that asks the user `"What is today's date? "` using `input()` and prints it back in a sentence:
+Using only your terminal (no file explorer), navigate to your `week-2/assignment-2/` folder. Then write a script that asks the user `"What is today's date? "` using `input()` and prints it back in a sentence. The example below shows the format — the date will be whatever the user types:
 
 ```
 You said today is April 24, 2026.
 ```
 
-At the top of the file, paste the two or three terminal commands you used to navigate there (e.g., `cd`, `ls`, `pwd`):
+At the top of the file, paste the two or three terminal commands you used to navigate there (e.g., `cd`, `ls`, `pwd`). Your own paths will differ from the example below:
 
 ```python
 # Navigation commands I used:
@@ -76,7 +76,7 @@ At the top of the file, paste the two or three terminal commands you used to nav
 
 ### Warmup 3: First Git Commit
 
-Make at least one meaningful commit with your warmup files so far, and run `git log --oneline`. Paste the output as a comment:
+Make at least one meaningful commit with your warmup files so far, and run `git log --oneline`. Paste the output as a comment. Your hash and message will differ from the example below:
 
 ```python
 # git log --oneline output:
@@ -107,7 +107,7 @@ Write a script that:
 
 1. Asks the user to enter a temperature in Fahrenheit
 2. Converts it to Celsius using the formula: `celsius = (fahrenheit - 32) * 5 / 9`
-3. Prints the result rounded to one decimal place:
+3. Prints the result rounded to one decimal place. The example below shows the format — your input and result will differ:
 
 ```
 Enter a temperature in Fahrenheit: 72
@@ -171,3 +171,55 @@ You can repeat the `add → commit → push` steps as many times as you like. Co
 git checkout main
 git pull origin main          # bring the merged changes back to your local machine
 ```
+
+---
+
+<details>
+<summary>Rubric (for AirHub reviewer and mentors)</summary>
+
+### Required Deliverables/Tasks
+
+Work happens in the student's **forked** `python-intro-homework` repo, on an
+`assignment-2` branch, with files inside a `week-2/assignment-2/` folder.
+`Example — adapt to your own layout`: the folder path and repo location are
+organizational conventions — do NOT fail correct code for sitting in a different
+folder or path; the reviewer cannot see the student's filesystem. Submission
+mechanics (fork, branch, PR base) are not graded from the code. Expected files:
+`warmup1.py`, `warmup2.py`, `warmup3.py`, `warmup4.py`, `mini_project.py`.
+
+- **Warmup 1 — Prove Python Is Working** — script prints the message, and a
+  comment block at the top shows the `python warmup1.py` command and its output.
+  `Use exactly as written`: the printed message is `Python is working!`.
+- **Warmup 2 — Navigate with the CLI** — script uses `input("What is today's
+  date? ")` and prints the entered date back in a sentence; a comment block shows
+  the navigation commands used. `Example — adapt to your own layout`: the date
+  ("April 24, 2026") and the navigation paths (`cd Desktop/python-intro-homework`,
+  etc.) are samples — the date comes from input and the student's paths will
+  differ; do not require the literal example text.
+- **Warmup 3 — First Git Commit** — a comment block shows real `git log --oneline`
+  output (short hash + message, at least one meaningful commit), and the script
+  prints a "what I learned" message. `Example — adapt to your own layout`: the hash
+  (`a3f91bc`) and commit message are samples — do not require the literal example;
+  any real-looking log output and any learning message pass.
+- **Warmup 4 — Read an Error Message** — the file contains a deliberate bug that
+  the student then FIXED, so the submitted file runs cleanly, plus a comment naming
+  the error, its cause, and the fix. `Example — adapt to your own layout`: the
+  specific bug and error type are the student's choice — do not require a
+  particular one. Required: the submitted file runs without error (bug fixed, not
+  left broken).
+- **Mini-Project — Temperature Converter (`mini_project.py`)** — prompts for a
+  Fahrenheit temperature with `input()`, converts it, and prints the result rounded
+  to one decimal place using an f-string. `Use exactly as written`: the conversion
+  formula `celsius = (fahrenheit - 32) * 5 / 9` (no library converter). `Example —
+  adapt to your own layout`: the sample input/output (72 → 22.2) comes from input —
+  check the math instead (72 → 22.2, 32 → 0.0, 212 → 100.0). Required: input cast
+  to `float`, and exactly one decimal place (`:.1f` or `round(celsius, 1)`).
+- **Video reflection (URL2)** — a required submission, but it is not part of the
+  code and is not assessed here. Do not fail the code submission for anything about
+  the video.
+
+### Optional Deliverables/Tasks
+
+**None.**
+
+</details>
